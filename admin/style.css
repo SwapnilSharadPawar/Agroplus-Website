@@ -1,0 +1,124 @@
+/* Reset */
+body, html {
+  margin: 0; padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 50px;
+  background: #007bff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.menu-btn {
+  font-size: 22px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #fff;
+  margin-right: 15px;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 50px;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #343a40;
+  color: #fff;
+  transition: 0.3s;
+  padding-top: 20px;
+  z-index: 999;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #ddd;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  background: #495057;
+  color: #fff;
+}
+
+/* Content */
+.content {
+  margin-top: 60px;
+  padding: 20px;
+  transition: margin-left 0.3s;
+}
+
+.content.shift {
+  margin-left: 250px; /* Adjust content when sidebar opens */
+}
+
+/* Table (for messages.php) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+th {
+  background: #007bff;
+  color: #fff;
+}
+/* Dashboard Card */
+.card {
+  background: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 300px;
+}
+.card h3 {
+  margin: 0 0 10px 0;
+  color: #007bff;
+}
+.card p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.card a:hover {
+  background: #0056b3;
+}
